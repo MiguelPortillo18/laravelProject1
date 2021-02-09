@@ -24,6 +24,6 @@ class contactUsController extends Controller
 
         Mail::to('migueportillo16@gmail.com')->send($correo);
 
-        return redirect()->route('contactUs.index')->with('info', 'Mensaje enviado!'); 
+        return redirect()->route('contactUs.index')->with('info', 'Mensaje enviado con exito!'); 
     }
 }
